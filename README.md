@@ -86,8 +86,13 @@ alias kg='k get'
 alias kd='k describe'
 alias ka='k apply -f'
 alias kn='k config set-context --current --namespace'
+
+export do="--dry-run=client -o yaml"
+
 # : wq
 source ~/.bashrc
+# or 
+tmux
 ```
 
 Note:
@@ -101,7 +106,8 @@ kg deploy
 ```
 * There already is an alias `k=kubectl`.  
   Tab completion does work for it, so use e.g. `k get po <TAB>` instead of typing or copying pod names
-* killer.sh recommends defining these variables, but I use `ctrl` + `z` + `bg` instead
+* killer.sh recommends defining these variables (BTW, for this to work in zsh, you would have to enforce word splitting: `$=do`).  
+  Instead of the latter, I usually do `ctrl` + `z` + `bg`
 ```bash
 export do="--dry-run=client -o yaml"    # k create deploy nginx --image=nginx $do
 
@@ -120,7 +126,7 @@ export now="--force --grace-period 0"   # k delete pod x $now
 	* move from pane to pane using `ctrl`+`b` + cursor keys
 	* select mode (scrolling) `ctrl`+`b` + `]` - then use search or cursor keys or page up/down for navigating
 	  Careful: `ctrl`+`w` might close tab. Better use mouse for copying.
-	* search: in select mode `ctrl`+`b`+`s` or `r` for reverse
+	* search: in select mode `ctrl`+`s` or `r` for reverse
 	  `n` for next hit; `Shift+n` for previous hit
 	* increase size of pane by keeping `ctrl`+`b` pressed and using cursor keys
     * `ctrl`+`z` to toggle full screen for a pane
@@ -131,11 +137,11 @@ export now="--force --grace-period 0"   # k delete pod x $now
     * `q` quit, can be combined to `wq` 
 	* `y`  = yank = copy
 	* `p` = paste
-	* `d` = delete = cut. If you want to delete more lines just to, e.g. `dddd`
+	* `d` = delete = cut. If you want to delete more lines just do, e.g. `dddd`
     * `u` = undo
 	* redo: `ctrl` + `r`
 	* `v` = visual (select), use cursor keys, then `y` or `p`
-	* indent: select then `>` or `<` (repeat with `.`)
+	* indent: select then `shift` + `>` or `<` (repeat with `.`)
 * `less`
 	* switch search to case-insensitive using `:i`
 	* search using `/`
