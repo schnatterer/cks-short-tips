@@ -1,396 +1,221 @@
-cks-short-tips
+ckad-cka-cks-kubestronaut
 ===
 
-1. [Have a plan for preparation](#have-a-plan-for-preparation)
-   - [Curated CKS Resources](#curated-cks-resources)
+[<img src="https://about.cloudogu.com/assets/cloudogu-logo-f1f26e5c32f240d0a161cebe71e91138ee5662c1f99fb314539a4763ef5959a946130f1a12e9bc39c83c127092a66b919d1fae86fadd5fe9639d06032787a03d.svg" align="right" width="25%">](https://cloudogu.com/)
+
+Collection of tips for preparing for the CKAD, CKA, CKS exams.
+
+This repo contains experiences I gathered while passing seven CNCF certifications between 2018 and 2026, working as a developer, trainer, cloud engineer, tech lead and field CTO at [Cloudogu](https://cloudogu.com/).
+
+This main README contains generic tips that are true for each of the exams.  
+In addition, you can find specific links for each of the exams in a separate file.
+
+[<img title="CKAD" width="20%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg">](CKAD.md)
+[<img title="CKA" width="20%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg">](CKA.md)
+[<img title="CKS" width="20%" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg">](CKS.md)
+<img title="Kubestronaut" width="20%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg">
+
+For each exam the individual file provdes chapters on
+
+* Preparation (how I prepared for the exam)
+* Curated Resources (useful resources I used)
+* Tools and technologies (a compact list of things I deem important for the exam)
+
+## Short Tips
+
+1. [Have a plan for preparation. Don't procrastinate.](#have-a-plan-for-preparation-dont-procrastinate)
 2. [Train for speed](#train-for-speed)
-   - [Disable unsafe pasting](#disable-unsafe-pasting)
-   - [Use aliases and tab completion](#use-aliases-and-tab-completion)
-   - [Be fast with CLI tools](#be-fast-with-cli-tools)
 3. [Know your tools and technologies](#know-your-tools-and-technologies)
-4. [Be thorough](#be-thorough)
-5. [Don't give up](#dont-give-up)
+4. [Be ready for non-kubernetes challenges](#be-ready-for-non-kubernetes-challenges) 
+5. [Be thorough](#be-thorough)
+6. [Don't give up](#dont-give-up)
 
-<img width="25%" style="float: right" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg" ></img>
+### Have a plan for preparation. Don't procrastinate.
 
-# Have a plan for preparation
+Plan you learning time. My personal estimates can be found in the `Preparation` section: [CKAD](CKAD.md#preparation), [CKA](CKA.md#preparation), [CKS](CKS.md#preparation).  
 
-There a [tons of resources](#curated-cks-resources) out there. 
-Use them to acquire a wider knowledge, before training specifically for the exam.
+Here is the plan I used for exams:
 
-Here's my plan, as an example:
-
-I invested about 5 working days over a period of three weeks before the exam.  
-As a seasoned developer in the public cloud I was quick with kubectl, security-context and so on, but not so much with api-server config.  
-Retrospectively, spending maybe one more day would not have been advisable, as I had to look up a lot of api-server-related stuff in the docs during the exam.
-
+0. **Schedule the exam.** This increases commitment and avoids procrastination.  
+   You can always reschedule it up until 24 hours before the exam.
 1. **Read the Docs for the Certs.**  
-   IMO most importantly: [Resources Allowed: All LF Certification Programs - T&C DOCS (Candidate Facing Resources)](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks).
-2. **Work your way through the curriculum.**  
-   * read through [Walid Shaari's curated resources](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist), which add a lot of useful detail to rather abstract curriculum.
-   * follow-up reading on every topic!
-   * get your handy dirty! Install every tool on your local kubernetes cluster and apply the getting started docs.  
+   * Read the [candidate handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2) to learn about the exam platform.
+   * Find out which [resources are allowed](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed) for your specific exam.
+   * The most important ones are the kubernetes docs. Knowing your way around these will save you a lot of time during the exam. 
+2. **Work your way through the curriculum.**
+   * [cncf/curriculum](https://github.com/cncf/curriculum): look for the PDFs at the bottom.
+   * Read through preparations notes.  
+     See the `Curated Resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources) 
+   * e.g. Walid Shaari's curated resources offer insight on all three certifications, which add a lot of useful details to the rather abstract curriculums.
+   * Follow-up reading on every topic!
+   * Get your hands dirty! Experiment with imperative `kubectl` commands on your local cluster.  
      I use k3d via [gitops playground](https://github.com/cloudogu/gitops-playground)  
+   * For CKS install every tool (like falco and OPA) on your local kubernetes cluster and apply the getting started docs.
 3. **Solve example questions, learn from the results and from your errors.**  
-   * [Mohamed Abukar's mock exam questions](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist/tree/main/7-mock-exam-questions)
-   * [These](https://github.com/snigdhasambitak/cks) look like old killer.sh Questions with solutions, but no harm in having a look at them before having you first killer.sh try.
-   * These look promising, including a learning platform: [ViktorUJ/cks](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs)  
-     I discovered them only after I passed my CKS, though.
-4. **Have your first try at killer.sh (the week before the exam)**  
-   * Take it serious, but be prepared to fail.
+   See the `Curated Resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources)
+4. **Have your first try at killer.sh (a couple of days before the exam)**  
+   * Take it seriously, but be prepared to fail.
    * Main objective: Get accustomed to the exam environment and find out what to improve
    * Note down all your weak spots, both technologically as well es regarding efficiency on the shell/keyboard
 5. **Have your second try at killer.sh (one or two days before the exam)**
-   * This should give you confidence that you're now fully prepared and very time efficient with the tools
+   * This should give you confidence that you're now fully prepared and very time-efficient with the tools
    * Note down some more fine-tuning
    * Follow up on the things that were not perfect
 6. **Pass the exam**
    * Begin with the first question and try to solve as many questions as possible
    * Only if you're very unsure, flag some questions and come back later.  
-     Note that this takes some time, because you'll likely read the question and think about it twice.  
+     Note that this takes some time because you'll likely read the question and think about it twice.  
      On the other hand, losing a lot of time with one question might lead to not having enough time to complete easier tasks later.
    * [Don't give up until the exam ends 💪](#dont-give-up)
    * 🥂
 
-## Curated CKS Resources
+### Train for speed
 
-* Interactive learning environments
-  * Two tries for interactive killer.sh included in your exam voucher. Use them, but use them wisely!
-  * If you need more, create an account as [killercoda](https://killercoda.com/killer-shell-cka)
-  * [ViktorUJ/cks](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs) - local platform for learning kubernetes and preparation for CKS
-* Community resources
-  * [Walid Shaari's curated resources](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
-  * [Video Tutorials by Venkata Ramana Gali](https://www.youtube.com/watch?v=jvmShTBSBoA&list=PLFkEchqXDZx6Bw3B2NRVc499j1TavjOvm),
-    corresponding [Repo](https://github.com/ramanagali/Interview_Guide/blob/main/CKS_Preparation_Guide.md)
-* Example questions
-  * [Mohamed Abukar's mock exam questions](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist/tree/main/7-mock-exam-questions)
-  * These look promising, including a learning platform: [ViktorUJ/cks](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs)
-  * [These](https://github.com/snigdhasambitak/cks) look like old killer.sh Questions with solutions, but no harm in having a look at them before having you first killer.sh try.
-* [Udemy Courses](https://www.udemy.com/topic/certified-kubernetes-security-specialist-cks/)  
-  even when you don't take a course, having a look at the content might help discovering topics that are relevant
-* There are a lot more, when you follow the links in the repos above.
+Be fast on the command line!
 
-# Train for speed
+Note that other than in the killer.sh env, in the proper exam you can switch between windows using Alt+Tab.   
+Use it to quickly switch between docs in the browser and the terminal or multiple terminal instances.
 
-## Disable unsafe pasting
+#### kubectl
 
-[Disable](https://killer.sh/faq) "unsafe pasting" in VM terminal emulator
-  `"Terminal Preferences->General->Show unsafe paste dialog".`
-
-## Use aliases and tab completion
-
-Those are the ones I used
-```shell
-vi ~/.bashrc
-alias kg='k get'
-alias kd='k describe'
-alias ka='k apply -f'
-alias kn='k config set-context --current --namespace'
-
-export do="--dry-run=client -o yaml"
-
-# : wq
-source ~/.bashrc
-# or 
-tmux
-```
-
-Note:
-* Tab completion does not work for aliases 😐️   
- So I mainly use them to get a fast overview of pods, services, etc.
-```bash
-kg po
-kg svc
-kg ing
-kg deploy
-```
-* There already is an alias `k=kubectl`.  
+* There already is an alias `k=kubectl`. Use it!  
   Tab completion does work for it, so use e.g. `k get po <TAB>` instead of typing or copying pod names
-* killer.sh recommends defining these variables (BTW, for this to work in zsh, you would have to enforce word splitting: `$=do`).  
-  Instead of the latter, I usually do `ctrl` + `z` + `bg`
-```bash
-export do="--dry-run=client -o yaml"    # k create deploy nginx --image=nginx $do
+* Use shortnames for resources, e.g. `po`, `svc`, `deploy`, `ns`, `ing`, `sa`, etc.  
+  See ` k api-resources`  
+  💡 List only namespaced resources: `k api-resources --namespaced`  
+* Use `k run` to create pods
+* Use `k expose` to create services. Parameters like `--name abc` `type=NodePort` are useful.
+* Use `k create` to create other resources. Like Deployments, Secrets, etc.  
+  But: Try out if finding the examples in the docs works faster for you. e.g. I prefer using the docs for `ingress`.
+* Use `--dry-run -o yaml > out.yaml` to generate skeleton YAMLs.  
+  * `--dry-run` without e.g. `=client` is depcrecated, but still faster! Just ignore the warning.
+  * For non-idempotent resources like `deployments` and rather simple tasks, it might be faster to execute the command without `--dry-run` and then `k edit` the resource in-situ.
+* Know how to switch a namespace as fast as possible: `k config set-context --current --namespace=ns`:
+  `set-co<Tab>` , `--cur<Tab>`, `--na<Tab>`, either paste NS or start typing it then `<Tab>`.
+* For killing single pods use `k delete pod x --now&`.  
+  It has a `grace-period` of 1 second, but I still think it is faster than typing `--force --grace-period 0`. The `&` sends it to the background so you can continue typing the next command.
+* For killing pods in a deployment use `k rollout` restart or `k scale`.
+* Simple commands for testing something: 
+  * `k run test --image nginx:alpine`  
+    then  
+    `k exec test -- wget -O- ..`
+  * On Shot Alternative:  
+    `k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl ..`
+* Prefer `k get events` over `k events`, because it has more parmeters like `--sort-by`
 
-export now="--force --grace-period 0"   # k delete pod x $now
-```
-* vi is already set up with useful options, usually no need to edit `~/.vimrc`
 
-## Be fast with CLI tools
+#### Other CLI tools
 
 * Bash:
     * `ctrl` + `z`: keep open but return to shell
     * then `fg` return e.g. in `vi`
     * or `bg` keeps running in background e.g. for killing pods
-* `tmux` - first things in an exam: edit `bashrc` (see above), then start `tmux`
-	* split pane, preferable horizontal (`ctrl`+`b`+`"`) (easier for copying with mouse)
-	* move from pane to pane using `ctrl`+`b` + cursor keys
-	* select mode (scrolling) `ctrl`+`b` + `]` - then use search or cursor keys or page up/down for navigating
-	  Careful: `ctrl`+`w` might close tab. Better use mouse for copying.
-	* search: in select mode `ctrl`+`s` or `r` for reverse
-	  `n` for next hit; `Shift+n` for previous hit
-	* increase size of pane by keeping `ctrl`+`b` pressed and using cursor keys
-    * `ctrl`+`z` to toggle full screen for a pane
+    * Cursor up/down to quickly repeat last command (e.g. `k apply`)
+    * `Ctrl + r` for searching in history. Often faster than cursor if it is not the last command you want to execute again.
+    * When needing to run a command before finishing a line, save it by prepending with `#`.  
+     Often faster than ctrl+c and retyping everything from scratch.
 * `vim`
-	* `w` write, don't quit. Hints:
-      * use other tmux pane to run `ka`, then come back to fix potential syntactic errors
-      * or use `ctrl` + `z` to send `vim` to background, run `ka` then `fg` to return to `vim` 
+    * vi is already set up with useful options (like paste mode), usually no need to edit `~/.vimrc`
+	* `w` write, don't quit. Hint:  
+      use `ctrl` + `z` to send `vim` to background, run `k apply -f` then `fg` to return to `vim` 
     * `q` quit, can be combined to `wq` 
 	* `y`  = yank = copy
 	* `p` = paste
 	* `d` = delete = cut. If you want to delete more lines just do, e.g. `dddd`
     * `u` = undo
 	* redo: `ctrl` + `r`
-	* `v` = visual (select), use cursor keys, then `y` or `p`
+	* `v` = visual (select), use cursor keys, then `y` or `d`
 	* indent: select then `shift` + `>` or `<` (repeat with `.`)
 * `less`
 	* switch search to case-insensitive using `:i`
 	* search using `/`
-* `ssh` / `scp`, to access or copy files to/from nodes
-* `cut --delimiter ' ' --fields 9 # delimiter space, print field 9`
+* `helm`
+    * `helm search repo nginx --versions`
+    * `helm history` -> `helm rollback cart-service 1 -n production`
+    * `helm show values scm-manager/scm-manager` - show possible values of chart
+    * `helm get values scmm` - show actual values of release
+    * `helm upgrade internal-issue-report-apiv2 killershell/nginx -version <TARGET_VERSION> --reuse-values --dry-run`
+* In CKA and CKS in tasks relating to `kubeadm`, Kubelet and debugging, `sudo -i` is faster than prepending all commands with `sudo`.
+* (optional) `k get XYZ -o yaml | yq e` highlights an existing resource.  
+  For existing files you can use `vi`.
+* (optional) `ssh` / `scp`, to access or copy files to/from nodes
+* (optional) `cut --delimiter ' ' --fields 9 # delimiter space, print field 9`
 
-# Know your tools and technologies
+#### What about aliases and tmux?
 
-* curl
-    * Validate certificate: `curl -vk 2>&1  https://xyz | grep -i subject`
-    * [Accessing the Kubernetes API from a Pod](https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/)
-      Note the path to the secrets
-```bash
-k run debug-node --rm -it --image alpine --
-'curl --cacert ${CACERT} --header "Authorization: Bearer ${TOKEN}" -X GET ${APISERVER}/api/v1/namespaces/default/secrets'
-```
-* `kube-apiserver`, `kubelet`, etc.
-    *  interne YAMLs konfigurierbar:
-    * `/etc/kubernetes/manifests`
-    * `/etc/kubernetes/manifests/kube-apiserver.yaml`
-    * `/etc/kubernetes/manifests/kube-controller-manager.yaml`
-    * `/var/lib/kubelet/config.yaml`
-    * apiserver is automatically restarted when `kube-apiserver.yaml` is changed.  
-      If need be this can be forced using `crictl rmp` , or even using `kubectl` (`k delete pod`) on a controlplane node or using restarting the service
-```shell
-#SystemD
-systemctl status kubelet
-systemctl restart kubelet
-# or system V
-service kubelet restart
-service kubelet status
-```
-* [AppArmor](https://kubernetes.io/docs/tutorials/security/apparmor/)
-    * AppArmor profiles are specified _per-container_. To specify the AppArmor profile to run a Pod container with, add an annotation to the Pod's metadata
-    * `container.apparmor.security.beta.kubernetes.io/<container_name>: <profile_ref>`
-    * `container.apparmor.security.beta.kubernetes.io/c1: localhost/very-secure`
-    * or `runtime/default`
-    * Profile must be present on node
-    * Accessing [App Armor Docs](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation) ist permitted
-    * See [k8s docs](https://kubernetes.io/docs/tutorials/security/apparmor/) for an example
-```shell
-apparmor_parser -q <<EOF
-EOF
-# or
-scp profile.txt node:/tmp/profile.txt
-#then
-apparmor_parser -q profile.txt
-# optional check
-apparmor_status
-# or just load it again
-apparmor_parser -q profile.txt # Output profile alrady exists
-```
-* [Seccomp](https://kubernetes.io/docs/tutorials/security/seccomp/)
-    * Kubernetes lets you automatically apply seccomp profiles loaded onto a node to your Pods and containers.
-    * [Enable the use of `RuntimeDefault` as the default seccomp profile for all workloads](https://kubernetes.io/docs/tutorials/security/seccomp/#enable-the-use-of-runtimedefault-as-the-default-seccomp-profile-for-all-workloads)
-      run the kubelet with the `--seccomp-default` [command line flag](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet)
-      in `/var/lib/kubelet/config.yaml` as in [this example](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist/blob/main/7-mock-exam-questions/Q5-Seccomp.md#2---change-the-seccomp-profile-by-adding-the-below-argument-in-the-kubelet-config-file) then `systemctl restart kubelet`
-    * Set default profile or an explicit one as shown in docs
-```yaml
-  securityContext:
-    seccompProfile:
-      type: RuntimeDefault
-# or
-  securityContext:
-    seccompProfile:
-      type: Localhost
-      localhostProfile: profiles/audit.json
-```
-* [PSA](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
-    * PSAs are set namespace-wide
-    * Try out e.g. this example: [Apply predefined Pod-level security policies using PodSecurity  |  Google Kubernetes Engine (GKE)  |  Google Cloud](https://cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission)
-    * `kubectl label --overwrite ns restricted-ns pod-security.kubernetes.io/enforce=restricted`
-    * `kubectl label --overwrite ns baseline-ns pod-security.kubernetes.io/warn=baseline`
-* Falco
-    * Might log to syslog -> `cat /var/log/syslog | grep -i xyz` or `journalctl -fu falco | grep "xyz error"`
-    * Output UID and Container ID: `%user.uid,%container.id` see [supported fields doc](https://falco.org/docs/reference/rules/supported-fields/) (allowed in exam!)
-```yaml
-rules_file:
-  - /etc/falco/falco_rules.yaml
-  - /etc/falco/falco_rules.local.yaml
-  - /etc/falco/rules.d # custom rules
-```
-* Tracee
-  similar to falco, ebpf kernel events, signatures tigger alert.
-* Trivy
-    * `trivy image alpine --severity=HIGH,CRITICAL`
-* Kubesec
-    * `kubesec scan k8s-deployment.yaml | jq`
-    * `kubesec scan jenkins/tmp-docker-gid-grepper.yaml | jq '.[].scoring.advise'`
-```yaml
-apiVersion: v1
-kind: Pod
-spec:
-  enableServiceLinks: false
-  automountServiceAccountToken: false
-  containers:
-  - name: restricted
-    securityContext:
-      runAsNonRoot: true
-      runAsUser: 100000
-      runAsGroup: 100000
-      allowPrivilegeEscalation: false
-      readOnlyRootFilesystem: true
-      seccompProfile:
-        type: RuntimeDefault
-      capabilities:
-        drop:
-        - ALL
-```
-*  Kube-bench
-	* Has to run on node! Either operator, pod or binary on node
-	* `kube-bench run --targets=master > bench.txt`
-	* `kube-bench run --targets=node > bench.txt`
-	* Using `--target` makes solving specific tasks much easier because there usually are a lot of results
-	* Writing to file allows for comparing the results after mitigation.
-	* `kube-bench run --targets=master | less` also works
-* crictl, similar to `docker` but for CRI
-```shell
-crictl pods
-crictl ps
+I used to use and recommend using aliases and tmux, which is no longer true.
+By now, in the exam
+* you're working in a remote desktop environment,
+* have to solve the questions on different hosts (via `ssh`)
+* and tmux is no longer pre-installed.
 
-crictl ps --pod $podid # all containers of pod, also works with grep $podid
-crictl logs $containerid # see output of crcitcl ps --pod for $containerid
-crictl rmp $podid #remove pod
-```
-* `etcdctl`: Access secrets directly: (command can be found in docs for [encryption at rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)):
-```shell
-  ETCDCTL_API=3 etcdctl \
-   --cacert=/etc/kubernetes/pki/etcd/ca.crt   \
-   --cert=/etc/kubernetes/pki/etcd/server.crt \
-   --key=/etc/kubernetes/pki/etcd/server.key  \
-   get /registry/secrets/default/secret1 | hexdump -C
-```
-* `strace`
-  Count time, calls, and errors for each system call and report a summary on program exit:
-  `strace -p pid -c`
-  or ongoing output, e.g. in separate tmux pane/window `strace -p pid 2>&1 | grep -i kill`
-  e.g. syscalls of container
-```shell
-crictl pods # -> POD_ID
-critctl ps --pod POD_ID # -> CONTAINER_ID
-crictl inspect CONTAINER_ID | grep -i pid # -> PID
-strace -p PID -c
-# Ctrl + C 
-#% time     seconds  usecs/call     calls    errors syscall
-#------ ----------- ----------- --------- --------- ---------------
-# 81,08    0,000030          30         1         1 rt_sigtimedwait
-# 18,92    0,000007           3         2           wait4
-#------ ----------- ----------- --------- --------- ----------------
-#100,00    0,000037          12         3         1 total
-```
-* OPA [conftest](https://www.conftest.dev/)
-    * `conftest test some.yaml`
-    * looks for policies in folder `policy`
-* OPA [Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/)
-    *  OPA = general purpose policy engine; Gatekeeper = kubernetes-specific impl of OPA as K8s Admission controller
-    * `ConstraintTemplate` -> describe rego
-    * `Constraint` -> describes matching rules, parameters, etc., lists violations
-        * Violations of constraints are listed in the `status` field of the corresponding constraint
-        * The audit pod emits JSON-formatted audit logs to stdout.
-        * Prometheus Metrics (not relevant for CKS)
-    * [example](https://open-policy-agent.github.io/gatekeeper/website/docs/howto):
-```yaml
-apiVersion: templates.gatekeeper.sh/v1
-kind: ConstraintTemplate
-metadata:
-  name: k8srequiredlabels
----
-apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sRequiredLabels
-metadata:
-  name: ns-must-have-gk
-spec:
-  enforcementAction: dryrun # deny|warn
-```
+That means you would have to configure aliases and install tmux multiple times.
 
-```sh
-# from killer.sh
-## Question 7
-k get crd | grep gatekeeper
-k edit blacklistimages pod-trusted-images # constraint: add parameter
-k edit constrainttemplates blacklistimages #-> template: change rego expression
+Instead, if you really need a second terminal, you could open another instance of it.  
+Most of the time I use the clipboard instead or switch out of vim to the terminal quickly using `ctrl` + `z`.
 
-## Preview Question 2
-# constraint, add parameter for namespace
-k edit requiredlabels namespace-mandatory-labels
-# template, fix rego
-k edit constrainttemplates requiredlabels
-``` 
-* `dmesg` - prints kernel logs
-* `kubeadm`
-```shell
-# control plane
-k drain $NODE
-# ssh to master
-apt update && apt install kubeadm=1.29.0-1.1 # if necessary
-kubeadm upgrade plan # outputs commands for apply
-kubeadm upgrade apply v1.24.1 #use specific version! Outputs message to upgrade kubelet
-apt install kubelet=1.29.0-1.1 kubectl=1.29.0-1.1
-service kubelet restart #systemctl restart kubelet
-k uncordon $NODE
+### Know your tools and technologies
 
-# node: drain, ssh
-apt update && apt install kubeadm=1.29.0-1.1
-kubeadm upgrade node
-service kubelet restart
-# exit, k uncordon
-```
-* sha512sum
-```bash
-  sha512sum -c FILE # can contain all sums and binaries
-  # FILE
-  #SUM1  /a/file
-  #SUM2  another-file
-  # or indivudal files
-  sha512sum -c <<< "$1  $2"
-```
+See [CKAD](CKAD.md#tools-and-technologies), [CKA](CKA.md#tools-and-technologies), [CKS](CKS.md#tools-and-technologies)
 
-* You might want to install helpful software. Not sure if it is allowed, though
-    * `apt install bat`-> binary is called `batcat` - syntax highlighted YAML files
-    * or `tldr` if you need examples for using binaries
-      or `curl cheat.sh/cut`
+### Be ready for non-kubernetes challenges
 
-# Be thorough
+* The exam takes 2 hours. You can check in between 30 mins before and 15 mins after the exam.
+* I recommend being there as early as possible, as the check-in process takes between 10 minutes (typical) and > 30 Minutes (technical errors).  
+  This time is not subtracted from your exam time.
+* You are allowed to bring a glass of water. Do it! Staying hydrated helps you think.
+* When there is an error during check-in, you can always restart the PSI browser.  
+  But you'll have to go through the whole check-in process again.
+* Some things to avoid during check-in
+  * Multi-monitor setup: Make sure to disable all but one monitor and fold your laptop when using an external monitor.  
+    I once had disabled them only in the OS, and the proctor asked me to close my laptop. This enabled my second monitor, leading to a full-screen error. I then had to restart the PSI browser and do the check-in all over again.  
+    Lesson Learned: Close the laptop and switch off the other monitor physically or even unplug it.
+  * Have a long wire on your webcam or use your phone to check in.  
+    * Once my phone camera screen froze, I did not see what the camera was transmitting. But it still worked for the proctor.
+      Until my phone switched the display off.
+    * I then switched to the webcam, but due to the panning around the room, the webcam must have disconnected shortly. I was presented with a full-screen error and had to restart the PSI browser and do the check-in all over again.
+* You can reload the remote desktop environment using `Ctrl` + `R`, e.g. when it shows reconnecting but nothing is happening
+* Don't use the thumb buttons of your mouse.  
+  I once pressed them out of habit. This led to the PSI browser returning to the check-in. I managed to return to my exam but could only see the question while the remote desktop was showing a reconnecting message. When it did not come back, I contacted the proctor, who called in tech support. Before doing anything they unhurriedly asked me for my email, OS, etc. All the while my exam time was ticking away. At some point, I must have pressed `Ctrl` + `R` in desperation. Then my remote desktop came back, but I still had to get rid of the tech support which kept pinging me in the chat. This whole thing took me about 15 minutes and made me quite nervous.
+* Make sure to not look to the side.  
+  Once I felt a bit warm in the flow and took off my jacket and hung it over my chair. Later I put it back on and got a full-screen warning that said if I ever looked to the side again, my exam would be canceled 😓
 
-* Switch to the correct kubecontext first (there is a command to copy at the beginning of each question)
-* Read questions carefully! There a several subtasks.
-* Read again when done to see if you did not miss anything.  
+### Be thorough
+
+
+* Switch to the correct kubecontex first (there is a command to copy at the beginning of each question)
+* Read questions carefully! There are several subtasks.
+* Switch namespaces! It is much less error-prone and usually faster to switch once and no longer having to remember to add `-n x` to each command or `namespace: x` to a resource.  
+ As soon as you discover a namespace in the question, switch to it!  
+ Sometimes they are implicit, e.g. when talking about resources in `kube-system` or they are hidden in a YAML file. 
+* Read the question again when you're done solving it to see if you did not miss anything.  
 * Validate your work, e.g. `k get node`, `k get pod`, `k exec -it ...`
-* Double check if you wrote the result to the right file
+* Double-check if you wrote the result to the right file
   * Sometimes it has to be written to a file on the main host
   * Sometimes it has to be written to a file on a node
   * Sometimes it is not necessary to write a result
-* Every exercise features links to the relevant docs in the header. Have a look a them before searching in the docs first!
-* Copy each YAML before editing to your home folder, to be able to reset after possibly messing it up.  
-  Don't copy it to the folder of the original file, this might confuse a running api server, for example.
+* Every exercise features links to the relevant docs in the header. Have a look at them before searching in the docs first!  
+  These might even be docs that were not on the list of allowed resources 🤯
+  e.g. during CKA you might have to install some tool (CNI) using its docs.
+* Copy each YAML before editing to your home folder to be able to reset after possibly messing it up.  
+  Don't copy it to the folder of the original file; this might confuse a running api server, for example.  
+  The same is true for `k edit`: do a `k get XYZ -o yaml > backup.yaml` to see if you can find the YAML in the output.
 
-In both my killer.sh tries I missed some points.  
+In most of my killer.sh test exams I miss some points.  
 Even though I solved things correctly or would have been able to, I wrote the result into a wrong file or missed to solve a subtask.  
 Don't do that, be thorough!
 
-# Don't give up
+### Don't give up
 
 * You are going to need every point to can score and every second you're granted
-* If some tasks might seem to difficult, flag them and tackle them again at the end
+* If some tasks might seem too difficult, flag them and tackle them again at the end.
+  Some questions can be solved in a very short time, but might be at the end.
+  Especially when you're planning to work sequentially through them (my strategy), you might miss easy points when you run out of time before arriving at the end.
 * Having only one or two minutes left is enough time to score some points by partially solving some question
 * You'll be surprised how fast you can learn to solve tasks under pressure
-* If you don't know how to solve, start by reading the docs linked at the top
+* If you don't know how to solve, start by reading the docs linked at the top. Do that at the end, when all other tasks are solved.
 * You don't need to solve the whole question, partial solutions score points as well
-* You never know, a partial solution saved in the last seconds might be the one point you need for the 70% passing score!
+* You never know, a partial solution saved in the last seconds might be the one point you need for the 66% passing score!
+* I passed three of my exams with around 70%, because I never gave up 😊
 
 Don't give up until you're kicked out of the exam 💪
