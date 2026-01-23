@@ -1,6 +1,7 @@
 # Kubernetes Certified Application Developer (CKAD)
 
 ## Preparation
+<img src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg" align="right" width="25%">
 
 * For an experienced k8s user (i.e. developer, not admin/cloud engineer), CKAD is not too much of a challenge given an exam-oriented preparation.
 * You can find everything in the k8s docs, so time is the only issue.
@@ -11,13 +12,14 @@
   * Afterward and in the morning of the day of the exam, I learned from my mistakes and did the remaining exercises.
   * Took the exam after lunch and succeeded with almost 90% even though [I lost 15 minutes](README.md#be-ready-for-non-kubernetes-challenges) due to a technical issue 😠.
 
-## Curated Resources
+## Curated resources
 
 * Interactive learning environments
     * Two tries for the same interactive killer.sh exam are included in your exam voucher. Use them, but use them wisely!
     * If you need more, create an account at [killercoda](https://killercoda.com/killer-shell-cka)
 * Community resources
-    * [Walid Shaari's curated resources](https://github.com/walidshaari/Kubernetes-Certified-Administrator/blob/main/README-ckad.md)
+    * [Walid Shaari's Curated resources](https://github.com/walidshaari/Kubernetes-Certified-Administrator/blob/main/README-ckad.md)
+    * If you're into reddit, there is an active subreddit [r/ckad/](https://www.reddit.com/r/ckad/) 
 * Example questions
     * [techwithmohamed/CKAD-Certified-Kubernetes-Application-Developer](https://github.com/techwithmohamed/CKAD-Certified-Kubernetes-Application-Developer) has Kustomize examples
 

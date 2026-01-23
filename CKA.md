@@ -1,6 +1,7 @@
 # Kubernetes Certified Administrator (CKA)
 
 ## Preparation
+<img src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg" align="right" width="25%">
 
 * For an experienced k8s user (i.e. developer, not admin/cloud engineer), CKA is more of a challenge than CKAD.  
   If you haven't used kubeadm before and have never set up a cluster manually before, expect some learning curve!
@@ -15,13 +16,13 @@
     * On the day of the exam, I spent the morning learning from my mistakes and doing the remaining exercises.
     * Took the exam after lunch and succeeded well enough.
 
-## Curated Resources
+## Curated resources
 
 * Interactive learning environments
     * Two tries for **two different** interactive killer.sh are included in your exam voucher. Use them, but use them wisely!
     * If you need more, create an account at [killercoda](https://killercoda.com/killer-shell-cka)
 * Community resources
-    * [Walid Shaari's curated resources](https://github.com/walidshaari/Kubernetes-Certified-Administrator/blob/main/README.md)
+    * [Walid Shaari's Curated resources](https://github.com/walidshaari/Kubernetes-Certified-Administrator/blob/main/README.md)
 * Example questions
     * [15 example questions from 2024 by Artem Lajko](https://itnext.io/how-the-cka-certification-has-changed-from-2021-to-2024-1e98b1ff6c88)
     * [arush-sal/cka-practice-environment](https://github.com/arush-sal/cka-practice-environment/tree/master/lab/files/questions) several years old, but looking through the example questions still gives you a good idea of what to expect.

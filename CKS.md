@@ -1,6 +1,7 @@
 # Certified Kubernetes Security Specialist (CKS)
 
 ## Preparation
+<img src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg" align="right" width="25%">
 
 * I invested about 5 working days over a period of three weeks before the exam.  
 * As a seasoned developer in the public cloud, I was quick with `kubectl`, security-context and so on, but not so much with api-server config.
@@ -9,14 +10,14 @@
 * Retrospectively, spending maybe one more day would not have been advisable, as I had to look up a lot of api-server-related stuff in the docs during the exam.
 * Also it is efficient to pass CKA and CKS in close succession because CKA-knowledge is also important for CKS.
 
-## Curated Resources
+## Curated resources
 
 * Interactive learning environments
     * Two tries for **two different** interactive killer.sh are included in your exam voucher. Use them, but use them wisely!
     * If you need more, create an account at [killercoda](https://killercoda.com/killer-shell-cka)
     * [ViktorUJ/cks](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs) - local platform for learning kubernetes and preparation for CKS
 * Community resources
-    * [Walid Shaari's curated resources](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
+    * [Walid Shaari's Curated resources](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
     * [Video Tutorials by Venkata Ramana Gali](https://www.youtube.com/watch?v=jvmShTBSBoA&list=PLFkEchqXDZx6Bw3B2NRVc499j1TavjOvm),
       corresponding [Repo](https://github.com/ramanagali/Interview_Guide/blob/main/CKS_Preparation_Guide.md)
 * Example questions

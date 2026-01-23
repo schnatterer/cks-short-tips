@@ -3,23 +3,46 @@ ckad-cka-cks-kubestronaut
 
 [<img src="https://about.cloudogu.com/assets/cloudogu-logo-f1f26e5c32f240d0a161cebe71e91138ee5662c1f99fb314539a4763ef5959a946130f1a12e9bc39c83c127092a66b919d1fae86fadd5fe9639d06032787a03d.svg" align="right" width="25%">](https://cloudogu.com/)
 
-Collection of tips for preparing for the CKAD, CKA, CKS exams.
+Tips for preparing for the CKAD, CKA, CKS, KCSA and KCNA exams and how to become a kubestronaut.
 
 This repo contains experiences I gathered while passing seven CNCF certifications between 2018 and 2026, working as a developer, trainer, cloud engineer, tech lead and field CTO at [Cloudogu](https://cloudogu.com/).
 
+[<img title="CKAD" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg">](CKAD.md)
+[<img title="CKA" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg">](CKA.md)
+[<img title="CKS" width="15%" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg">](CKS.md)
+[<img title="KCSA" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubernetes-kcsa-color.svg" >](KCSA.md)
+[<img title="KCNA" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kcna_color.svg">](KCNA.md)
+[<img title="Kubestronaut" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg">](Kubestronaut.md)
+
+
 This main README contains generic tips that are true for each of the exams.  
-In addition, you can find specific links for each of the exams in a separate file.
+In addition, there are separate files for each exam, containing these chapters:
 
-[<img title="CKAD" width="20%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg">](CKAD.md)
-[<img title="CKA" width="20%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg">](CKA.md)
-[<img title="CKS" width="20%" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg">](CKS.md)
-<img title="Kubestronaut" width="20%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg">
-
-For each exam the individual file provdes chapters on
-
-* Preparation (how I prepared for the exam)
-* Curated Resources (useful resources I used)
+* Preparation (how I (as an experienced engineer) prepared for the exam)
+* Curated resources (useful resources I used)
 * Tools and technologies (a compact list of things I deem important for the exam)
+
+## TOC
+* [README](README.md) (📌 you are here)
+  * [Short Tips](#short-tips)
+* [CKAD](CKAD.md)
+  * [Preparation](CKAD.md#preparation)
+  * [Curated resources](CKAD.md#curated-resources)
+  * [Tools and technologies](CKAD.md#tools-and-technologies)
+* [CKA](CKA.md)
+  * [Preparation](CKA.md#preparation)
+  * [Curated resources](CKA.md#curated-resources)
+  * [Tools and technologies](CKA.md#tools-and-technologies)
+* [CKS](CKS.md)
+  * [Preparation](CKS.md#preparation)
+  * [Curated resources](CKS.md#curated-resources)
+  * [Tools and technologies](CKS.md#tools-and-technologies)
+* [KCNA](KCNA.md)
+    * [Preparation](KCNA.md#preparation)
+* [KCSA](KCSA.md)
+  * [Preparation](KCSA.md#preparation)
+  * [Curated resources](KCSA.md#curated-resources)
+  * [Tools and technologies](KCSA.md#tools-and-technologies)
 
 ## Short Tips
 
@@ -32,7 +55,7 @@ For each exam the individual file provdes chapters on
 
 ### Have a plan for preparation. Don't procrastinate.
 
-Plan you learning time. My personal estimates can be found in the `Preparation` section: [CKAD](CKAD.md#preparation), [CKA](CKA.md#preparation), [CKS](CKS.md#preparation).  
+Plan your learning time. My personal estimates can be found in the `Preparation` section: [CKAD](CKAD.md#preparation), [CKA](CKA.md#preparation), [CKS](CKS.md#preparation).  
 
 Here is the plan I used for exams:
 
@@ -45,14 +68,14 @@ Here is the plan I used for exams:
 2. **Work your way through the curriculum.**
    * [cncf/curriculum](https://github.com/cncf/curriculum): look for the PDFs at the bottom.
    * Read through preparations notes.  
-     See the `Curated Resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources) 
-   * e.g. Walid Shaari's curated resources offer insight on all three certifications, which add a lot of useful details to the rather abstract curriculums.
+     See the `Curated resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources) 
+   * e.g. Walid Shaari's Curated resources offer insight on all three certifications, which add a lot of useful details to the rather abstract curriculums.
    * Follow-up reading on every topic!
    * Get your hands dirty! Experiment with imperative `kubectl` commands on your local cluster.  
      I use k3d via [gitops playground](https://github.com/cloudogu/gitops-playground)  
    * For CKS install every tool (like falco and OPA) on your local kubernetes cluster and apply the getting started docs.
 3. **Solve example questions, learn from the results and from your errors.**  
-   See the `Curated Resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources)
+   See the `Curated resources` sections: [CKAD](CKAD.md#curated-resources), [CKA](CKA.md#curated-resources), [CKS](CKS.md#curated-resources)
 4. **Have your first try at killer.sh (a couple of days before the exam)**  
    * Take it seriously, but be prepared to fail.
    * Main objective: Get accustomed to the exam environment and find out what to improve
