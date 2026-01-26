@@ -3,7 +3,7 @@ ckad-cka-cks-kubestronaut
 
 [<img src="https://about.cloudogu.com/assets/cloudogu-logo-f1f26e5c32f240d0a161cebe71e91138ee5662c1f99fb314539a4763ef5959a946130f1a12e9bc39c83c127092a66b919d1fae86fadd5fe9639d06032787a03d.svg" align="right" width="25%">](https://cloudogu.com/)
 
-Tips for preparing for the CKAD, CKA, CKS, KCSA and KCNA exams and how to become a kubestronaut.
+Tips for preparing for the CKAD, CKA, CKS, KCSA and KCNA exams and how to become a Kubestronaut.
 
 This repo contains experiences I gathered while passing seven CNCF certifications between 2018 and 2026, working as a developer, trainer, cloud engineer, tech lead and field CTO at [Cloudogu](https://cloudogu.com/).
 
@@ -21,6 +21,10 @@ In addition, there are separate files for each exam, containing these chapters:
 * Preparation (how I (as an experienced engineer) prepared for the exam)
 * Curated resources (useful resources I used)
 * Tools and technologies (a compact list of things I deem important for the exam)
+
+There is also general advice on how to become a [Kubestronaut](Kubestronaut.md) and if you're up for it, the **Kubestronaut in 4 weeks** challenge 🚀.
+
+[<img title="Kubestronaut" width="50%" src="Kubestronaut-certs.drawio.svg">](Kubestronaut.md)
 
 ## TOC
 * [README](README.md) (📌 you are here)
@@ -43,6 +47,10 @@ In addition, there are separate files for each exam, containing these chapters:
   * [Preparation](KCSA.md#preparation)
   * [Curated resources](KCSA.md#curated-resources)
   * [Tools and technologies](KCSA.md#tools-and-technologies)
+* [Kubestronaut](Kubestronaut.md)
+  * [Topical overlap of Kubestronaut exams](Kubestronaut.md#topical-overlap-of-kubestronaut-exams)
+  * [Order of exams](Kubestronaut.md#order-of-exams)
+  * [Kubestronaut in 4 weeks](Kubestronaut.md#kubestronaut-in-four-weeks)
 
 ## Short Tips
 
