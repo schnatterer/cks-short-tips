@@ -1,12 +1,12 @@
 # Kubestronaut
-<img src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg" align="right" width="15%">
+<img alt="Kubestronaut icon" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg" align="right" width="15%">
 
 General advice on how to become a Kubestronaut and if you're up for it, the [**Kubestronaut in 4 weeks**](#kubestronaut-in-four-weeks) challenge 🚀.
 
 ## Topical overlap of Kubestronaut exams
 There is a clear topical overlap between the Kubestronaut exams. Here is a rough approximation: 
 
-<img title="topical overlaps between the Kubestronaut exams" src="Kubestronaut-certs.drawio.svg" width="75%">
+<img alt="topical overlaps between the Kubestronaut exams" src="Kubestronaut-certs.drawio.svg" width="75%">
 
 
 * KCNA is somewhat of a theoretical basis of CKAD,

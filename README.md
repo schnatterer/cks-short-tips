@@ -1,18 +1,18 @@
 ckad-cka-cks-kubestronaut
 ===
 
-[<img src="https://about.cloudogu.com/assets/cloudogu-logo-f1f26e5c32f240d0a161cebe71e91138ee5662c1f99fb314539a4763ef5959a946130f1a12e9bc39c83c127092a66b919d1fae86fadd5fe9639d06032787a03d.svg" align="right" width="25%">](https://cloudogu.com/)
+[<img alt="Cloudogu icon" src="https://about.cloudogu.com/assets/cloudogu-logo-f1f26e5c32f240d0a161cebe71e91138ee5662c1f99fb314539a4763ef5959a946130f1a12e9bc39c83c127092a66b919d1fae86fadd5fe9639d06032787a03d.svg" align="right" width="25%">](https://cloudogu.com/)
 
 Tips for preparing for the CKAD, CKA, CKS, KCSA and KCNA exams and how to become a Kubestronaut.
 
 This repo contains experiences I gathered while passing seven CNCF certifications between 2018 and 2026, working as a developer, trainer, cloud engineer, tech lead and field CTO at [Cloudogu](https://cloudogu.com/).
 
-[<img title="CKAD" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg">](CKAD.md)
-[<img title="CKA" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg">](CKA.md)
-[<img title="CKS" width="15%" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg">](CKS.md)
-[<img title="KCSA" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubernetes-kcsa-color.svg" >](KCSA.md)
-[<img title="KCNA" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kcna_color.svg">](KCNA.md)
-[<img title="Kubestronaut" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg">](Kubestronaut.md)
+[<img alt="CKAD icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg">](CKAD.md)
+[<img alt="CKA icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg">](CKA.md)
+[<img alt="CKS icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg">](CKS.md)
+[<img alt="KCSA icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubernetes-kcsa-color.svg" >](KCSA.md)
+[<img alt="KCNA icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2021/09/kcna_color.svg">](KCNA.md)
+[<img alt="Kubestronaut icon" width="15%" src="https://www.cncf.io/wp-content/uploads/2024/03/kubestronaut-stacked-color.svg">](Kubestronaut.md)
 
 
 This main README contains generic tips that are true for each of the exams.  
@@ -24,7 +24,7 @@ In addition, there are separate files for each exam, containing these chapters:
 
 There is also general advice on how to become a [Kubestronaut](Kubestronaut.md) and if you're up for it, the **Kubestronaut in 4 weeks** challenge 🚀.
 
-[<img title="Kubestronaut" width="50%" src="Kubestronaut-certs.drawio.svg">](Kubestronaut.md)
+[<img alt="topical overlaps between the Kubestronaut exams" width="50%" src="Kubestronaut-certs.drawio.svg">](Kubestronaut.md)
 
 ## TOC
 * [README](README.md) (📌 you are here)

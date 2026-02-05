@@ -1,7 +1,7 @@
 # Kubernetes Certified Administrator (CKA)
 
 ## Preparation
-<img src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg" align="right" width="25%">
+<img alt="CKA icon" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-cka-color.svg" align="right" width="25%">
 
 * For an experienced k8s user (i.e. developer, not admin/cloud engineer), CKA is more of a challenge than CKAD.  
   If you haven't used kubeadm before and have never set up a cluster manually before, expect some learning curve!

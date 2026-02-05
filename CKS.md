@@ -1,7 +1,7 @@
 # Certified Kubernetes Security Specialist (CKS)
 
 ## Preparation
-<img src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg" align="right" width="25%">
+<img alt="CKS icon" src="https://www.cncf.io/wp-content/uploads/2020/11/kubernetes-security-specialist-logo.svg" align="right" width="25%">
 
 * I invested about 5 working days over a period of three weeks before the exam.  
 * As a seasoned developer in the public cloud, I was quick with `kubectl`, security-context and so on, but not so much with api-server config.

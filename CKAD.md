@@ -1,7 +1,7 @@
 # Kubernetes Certified Application Developer (CKAD)
 
 ## Preparation
-<img src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg" align="right" width="25%">
+<img alt="CKAD icon" src="https://www.cncf.io/wp-content/uploads/2021/09/kubernetes-ckad-color.svg" align="right" width="25%">
 
 * For an experienced k8s user (i.e. developer, not admin/cloud engineer), CKAD is not too much of a challenge given an exam-oriented preparation.
 * You can find everything in the k8s docs, so time is the only issue.

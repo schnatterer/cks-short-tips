@@ -1,7 +1,7 @@
 # Cloud Native Security Associate (KCSA)
 
 ## Preparation
-<img title="KCSA" src="https://www.cncf.io/wp-content/uploads/2024/03/kubernetes-kcsa-color.svg" align="right" width="25%">
+<img alt="KCSA icon" src="https://www.cncf.io/wp-content/uploads/2024/03/kubernetes-kcsa-color.svg" align="right" width="25%">
 
 * For an experienced k8s user (i.e. developer, not admin/cloud engineer), KCSA is definitely more of a challenge than KCNA (which is none) but still much easier than CKAD.
 * Other than with CK* exams, time is absolutely not an issue. I took my time and finished in less than an hour of the 1,5h exam time.
@@ -79,10 +79,10 @@
     * Configure --client-cert-auth=true to enforce mutual TLS for all incoming connections
     * Set --listen-client-urls to the specific private interface IP or localhost only
 * Admission Control  
-  <img title="Admission Controller Phases" src="https://kubernetes.io/images/blog/2019-03-21-a-guide-to-kubernetes-admission-controllers/admission-controller-phases.png" width="50%"/> 
+  <img alt="Admission Controller Phases" src="https://kubernetes.io/images/blog/2019-03-21-a-guide-to-kubernetes-admission-controllers/admission-controller-phases.png" width="50%"/> 
 * Certs
   * Server vs client cert
-  * `0=system:masters` client cert brings you into `system:masters` group, which is bound to the "cluster-admin" super-user role by the default binding [docs](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
+  * `0=system:masters` client cert brings you into `system:masters` group, which is bound to the "cluster-admin" superuser role by the default binding [docs](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 * scheduler
   * Sec best practices
     * Use Role-Based Access Control (RBAC) to restrict access to the scheduler API
