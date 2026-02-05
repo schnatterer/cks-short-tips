@@ -66,7 +66,7 @@ The Kubestronaut in four weeks challenge below also offers a [timeline](#timelin
 
 Challenge: Become a Kubestronaut in four weeks.
 
-Based on [my own experience](#my-experience), it is efficient and absolutely possible, at least for the seasoned developer or cloud engineer.
+Based on [my own experience](#my-experience), it is efficient and [absolutely possible](#my-experience), at least for the seasoned developer or cloud engineer.
 
 If you take on this challenge, I'd love to hear from you how it went. Any feedback is welcome.
 
@@ -95,6 +95,12 @@ My general recommendation for scheduling exams:
 ### My experience
 
 In a way, I did this challenge myself. I became a Kubestronaut in two weeks (but had a valid CKS before).
+
+I also know of others who made it, e.g. read of others who made it, e.g.
+* [LinkedIn](https://www.linkedin.com/posts/kevin-welter_kubernetes-cncf-cka-activity-7420465100706271232-UHhx)
+* [🔒️ cncf-kubestronauts](https://cloud-native.slack.com/archives/C06KKSDSKR7/p1769507365587559) slack (Kubestronauts-only)
+
+Here is my story:
 
 At the end of 2025, the notice of my upcoming CKS expiry sparked the idea to become a Kubestronaut.  
 What a nice challenge to start the new year with!  
